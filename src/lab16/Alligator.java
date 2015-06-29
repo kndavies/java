@@ -22,6 +22,4 @@ public class Alligator implements Countable{
 	public String getCountString() {
 		return Integer.toString(count) + " alligator";
 	}
-	
-	
 }
