@@ -1,6 +1,7 @@
 package lab19;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class MovieApp {
@@ -11,7 +12,7 @@ public class MovieApp {
 		ArrayList<Movie> a = new ArrayList<Movie>();
 		for(int i = 1; i <= 100; i++)
 			a.add(MovieIO.getMovie(i));
-		
+		Collections.sort(a);
 		do
 		{
 		input = Validator.getChoiceString("What categories are you interested in?", sc, "animated", "drama", "horror", "scifi");

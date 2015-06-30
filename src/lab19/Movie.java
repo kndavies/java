@@ -1,6 +1,6 @@
 package lab19;
 
-public class Movie {
+public class Movie implements Comparable<Movie>{
 	String title;
 	String category;
 	
@@ -24,6 +24,12 @@ public class Movie {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+
+	@Override
+	public int compareTo(Movie o) {
+		return (this.getTitle().compareTo(o.getTitle()));
 	}
 
 }
